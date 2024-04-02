@@ -49,11 +49,12 @@ import VueLazyload from 'vue-lazyload';
 // });
 // import HammerPlugin from './utils/preventSwipe';
 
-import { registerSW } from 'virtual:pwa-register'
+import { useRegisterSW } from 'virtual:pwa-register/vue'
 
-registerSW({
-  onNeedRefresh() { },
-  onOfflineReady() { }
+const updateSW = useRegisterSW({
+  onNeedRefresh() {
+    updateSW.updateServiceWorker(true)
+  }
 })
 
 const app = createApp(App)
