@@ -1,0 +1,1 @@
+"use strict";"serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js",{scope:"/"}).then(function(e){e.update()})});
