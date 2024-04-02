@@ -10,7 +10,8 @@ export default defineConfig({
     vue(),
     legacy(),
     VitePWA({
-      registerType: 'autoUpdate',
+      registerType: 'prompt',
+      injectRegister: 'script',
       outDir: "docs",
       manifest: {
         name: "Manga Reader",

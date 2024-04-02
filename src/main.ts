@@ -49,6 +49,13 @@ import VueLazyload from 'vue-lazyload';
 // });
 // import HammerPlugin from './utils/preventSwipe';
 
+import { registerSW } from 'virtual:pwa-register'
+
+registerSW({
+  onNeedRefresh() { },
+  onOfflineReady() { }
+})
+
 const app = createApp(App)
   .use(IonicVue, {
     hardwareBackButton: false,
@@ -59,7 +66,7 @@ const app = createApp(App)
   .use(router)
   .use(store)
   .use(VueLazyload);
-  // .use(HammerPlugin);
+// .use(HammerPlugin);
 
 router.isReady().then(() => {
   app.mount('#app');
