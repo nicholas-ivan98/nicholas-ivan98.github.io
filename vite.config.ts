@@ -10,10 +10,12 @@ export default defineConfig({
     vue(),
     legacy(),
     VitePWA({
-      registerType: "autoUpdate",
+      registerType: 'autoUpdate',
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg}']
+        skipWaiting: true,
+        clientsClaim: true
       },
+      minify: false,
       // includeAssets: ['index.html', 'build/**/*.js', 'build/**/*.css'],
       // workbox: {
       //   cleanupOutdatedCaches: true
