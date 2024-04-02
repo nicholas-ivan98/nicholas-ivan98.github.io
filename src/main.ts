@@ -51,6 +51,8 @@ import VueLazyload from 'vue-lazyload';
 import { registerSW } from 'virtual:pwa-register'
 registerSW({ immediate: true, onRegisteredSW(a, b) {
   b?.update()
+}, onRegistered(b) {
+  b?.update()
 }})
 const app = createApp(App)
   .use(IonicVue, {
