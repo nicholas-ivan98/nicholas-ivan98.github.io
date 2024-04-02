@@ -18,7 +18,7 @@ export default defineConfig({
       },
       // includeAssets: ['index.html', 'build/**/*.js', 'build/**/*.css'],
       outDir: "docs",
-      filename: "sw-0.0.4.js",
+      filename: "sw-0.0.5.js",
       manifest: {
         name: "Manga Reader",
         short_name: "Manga Reader",
