@@ -13,7 +13,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       workbox: {
         skipWaiting: true,
-        clientsClaim: true
+        clientsClaim: true,
+        cleanupOutdatedCaches: true
       },
       minify: false,
       // includeAssets: ['index.html', 'build/**/*.js', 'build/**/*.css'],
