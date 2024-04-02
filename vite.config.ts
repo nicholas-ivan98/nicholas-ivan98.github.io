@@ -10,7 +10,7 @@ export default defineConfig({
     vue(),
     legacy(),
     VitePWA({
-      registerType: 'prompt',
+      registerType: 'autoUpdate',
       injectRegister: 'script',
       outDir: "docs",
       manifest: {
