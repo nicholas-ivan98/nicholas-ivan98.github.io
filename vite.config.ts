@@ -15,6 +15,7 @@ export default defineConfig({
       // workbox: {
       //   cleanupOutdatedCaches: true
       // },
+      outDir: "docs",
       manifest: {
         name: "Manga Reader",
         short_name: "Manga Reader",
@@ -59,4 +60,7 @@ export default defineConfig({
   //   globals: true,
   //   environment: 'jsdom'
   // },
+  build: {
+    outDir: 'docs',
+  }
 })
