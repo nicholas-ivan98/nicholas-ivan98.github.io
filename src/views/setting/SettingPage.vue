@@ -7,7 +7,7 @@
                         color="primary"></ion-icon>
                     <ion-label style="margin-left: 4px; font-size: medium;" color="primary">Back</ion-label>
                 </ion-buttons>
-                <ion-title style="text-align: center; margin-right: 80px;">Setting456</ion-title>
+                <ion-title style="text-align: center; margin-right: 80px;">Setting789</ion-title>
             </ion-toolbar>
         </ion-header>
 
