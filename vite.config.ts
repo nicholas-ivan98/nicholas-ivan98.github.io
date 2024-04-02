@@ -11,6 +11,9 @@ export default defineConfig({
     legacy(),
     VitePWA({
       registerType: "autoUpdate",
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}']
+      },
       // includeAssets: ['index.html', 'build/**/*.js', 'build/**/*.css'],
       // workbox: {
       //   cleanupOutdatedCaches: true
