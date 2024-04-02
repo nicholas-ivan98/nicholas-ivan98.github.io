@@ -16,11 +16,7 @@ export default defineConfig({
         clientsClaim: true,
         cleanupOutdatedCaches: true
       },
-      minify: false,
       // includeAssets: ['index.html', 'build/**/*.js', 'build/**/*.css'],
-      // workbox: {
-      //   cleanupOutdatedCaches: true
-      // },
       outDir: "docs",
       manifest: {
         name: "Manga Reader",
