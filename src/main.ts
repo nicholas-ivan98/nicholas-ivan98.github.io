@@ -52,8 +52,9 @@ import VueLazyload from 'vue-lazyload';
 import { useRegisterSW } from 'virtual:pwa-register/vue'
 
 const updateSW = useRegisterSW({
+  immediate: true,
   onNeedRefresh() {
-    updateSW.updateServiceWorker(true)
+    updateSW.updateServiceWorker()
   }
 })
 
