@@ -14,7 +14,7 @@ export default defineConfig({
       workbox: {
         skipWaiting: true,
         clientsClaim: true,
-        cleanupOutdatedCaches: true
+        cleanupOutdatedCaches: false
       },
       // includeAssets: ['index.html', 'build/**/*.js', 'build/**/*.css'],
       outDir: "docs",
